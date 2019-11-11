@@ -1,4 +1,3 @@
-package Patience;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -55,7 +54,7 @@ public class Freecell {
 	public TasDeCartes p8 = new TasDeCartes("pile 4", new ArrayList<Carte>(),
 			pos8, positionPilesY);
 
-	// créer un paquet de 52 cartes
+	// creer un paquet de 52 cartes
 	public Freecell() {
 		for (Carte.Couleur coul : Carte.Couleur.values())
 			for (int i = 1; i <= 13; i++) {

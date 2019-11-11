@@ -1,4 +1,3 @@
-package Patience;
 import java.util.ArrayList;
 
 

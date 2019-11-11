@@ -1,4 +1,3 @@
-package Patience;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -49,7 +48,7 @@ public class Solitaire {
 	public TasDeCartes p4 = new TasDeCartes("pile 4", new ArrayList<Carte>(),
 			pos7, positionPilesY);
 
-	// créer un paquet de 52 cartes
+	// creer un paquet de 52 cartes
 	public Solitaire() {
 		for (Carte.Couleur coul : Carte.Couleur.values())
 			for (int i = 1; i <= 13; i++)

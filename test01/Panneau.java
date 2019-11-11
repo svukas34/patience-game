@@ -1,4 +1,3 @@
-package Patience;
 
 import java.awt.Graphics;
 import java.util.ArrayList;
@@ -87,12 +86,12 @@ public class Panneau extends JPanel {
 		} else { return false; }
 	}
 
-	//retourne vrai si x € {Ex,Ex+dx} et y € {Ey,Ey+dy}
+	//retourne vrai si x entre {Ex,Ex+dx} et y entre {Ey,Ey+dy}
 	public boolean positionSurElement(int Ex, int Ey, int dEx, int dEy, int x, int y){
 		return (((x>Ex) && (x<(Ex + dEx))) && (((y>Ey) && (y<(Ey+dEy)))));
 	}
 		
-	//retourne vrai si x € {Ex,Ex+dx} +/- (dpx/2)   et  y € {Ey,Ey+dy} +/- (dpy/2)
+	//retourne vrai si x entre {Ex,Ex+dx} +/- (dpx/2)   et  y entre {Ey,Ey+dy} +/- (dpy/2)
 	public boolean positionAutourElement(int Ex, int Ey, int dEx, int dEy, int x, int y){
 		return (((x>(Ex-(dpx/2))) && (x<(Ex + dEx+(dpx/2)))) && (((y>(Ey-(dpy/2)) && (y<(Ey+dEy+(dpy/2)))))));
 	}

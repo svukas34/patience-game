@@ -1,4 +1,3 @@
-package Patience;
 
 public class Position {
  

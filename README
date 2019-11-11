@@ -1,0 +1,72 @@
+This repo contains the 'patience project' made by Lea Saffar and Stefan Vukasinovic in 2012 for their first year of school.
+The idea was to make a patience game, mainly Solitaire and made it enaught oriented-object to make another patience game with the less changes possible.
+Here we tried to make Freecell as a second game, by extending Solitaire's game engine.
+
+The project is uploaded on github in 2019.
+The 'worksapce' folder contains all the versions & evolutions of the project in the time (git wasn't used at that time)
+The 'test01' folder contains the source code we decided to share with teachers, it is very similar to 'workspace/Patiences2.3'
+
+diff between 'test01' and 'Patience2.3' when work uploaded on github :
+- special characters related to french alphabet removed from files Carte.java, Freecell.java, PanFreecell.java, Panneau.java and Solitaire.java
+
+
+
+
+
+Fenetre.java
+
+1d0
+< package Patience;
+27,28d25
+< 	PanFreecell panF = new PanFreecell();
+< 	JPanel p = new JPanel();
+63c60
+< 		setContentPane(p);
+---
+> 		setContentPane(panS);
+71,72c68,69
+< 			this.remove(p);
+< 			setContentPane(p);
+---
+> 			this.remove(panS);
+> 			setContentPane(panS);
+114c111
+< 			setContentPane(p);
+---
+> 			setContentPane(panS);
+
+
+
+Main.java
+
+1d0
+< package Patience;
+9c8
+< 		System.out.println("A quelle jeu voulez vous jouer ? solitaire tapez 1, freecell tapez 2");
+---
+> 		/*System.out.println("A quelle jeu voulez vous jouer ? solitaire tapez 1, freecell tapez 2");
+12,16c11,14
+< 	    Fenetre fen = new Fenetre();
+< 		fen.setVisible(true);
+< 		if (i == 1){
+< 			fen.p = fen.panS;
+< 		}else{
+---
+> 		if (i == 1){*/
+> 			Fenetre fen1 = new Fenetre();
+> 			fen1.setVisible(true);
+> 	/*	}else{
+18c16,17
+< 				fen.p = fen.panF;
+---
+> 				FenetreBis fen2 = new FenetreBis();
+> 				fen2.setVisible(true);
+22c21
+< 		}
+---
+> 		}*/
+
+
+
+
+

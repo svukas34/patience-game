@@ -1,4 +1,3 @@
-package Patience;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -147,7 +146,7 @@ public class PanFreecell extends Panneau implements MouseMotionListener, MouseLi
 		}
 		
 		listeDeplacement.clear();
-		// a vérifier pour le null !!!!!!!!!!!!!!!!!!!!!!!!
+		// a verifier pour le null !!!!!!!!!!!!!!!!!!!!!!!!
 		ColonneOrigine = null;		
 		preC.setX(0);
 		preC.setY(0);

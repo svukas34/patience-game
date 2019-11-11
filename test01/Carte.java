@@ -1,4 +1,3 @@
-package Patience;
 
 import javax.swing.ImageIcon;
 
@@ -50,7 +49,7 @@ public class Carte {
 		else { this.couleurAbsolue = CouleurAbsolue.Noir; }
 	}
     
-    //vérifie si la carte THIS et la carte KARD ont la meme couleur (rouge/noir)
+    //verifie si la carte THIS et la carte KARD ont la meme couleur (rouge/noir)
     public boolean memeCouleur(Carte Kard){
     	return(this.couleurAbsolue.equals(Kard.couleurAbsolue));
     }

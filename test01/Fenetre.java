@@ -1,4 +1,3 @@
-package Patience;
 import javax.swing.*;
 
 import java.awt.*;
